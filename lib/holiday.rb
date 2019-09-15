@@ -73,14 +73,18 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
+  notarray = []
   results_array = []
   holiday_hash.each do |season, event|
     event.each do |key, value|
       if value.include?("BBQ")
         results_array << key
+      else 
+        notarray << key
     end 
   end
 end
+returnarray
 end
 
 
